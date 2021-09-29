@@ -1,0 +1,94 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+$primary: #223A47;
+$secondary: #F27257;
+
+body{
+    //font-family: 'Fredericka the Great', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+#wrapper-navbar{
+    .top-header-holder{
+        height: 260px;
+        background-color: gray;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container{
+            .logo-holder{
+                .logo{
+                    width: 275px;
+
+                }
+            }
+            .social-media-holder{
+                font-size: 50px;
+                a{
+                    color: $secondary;
+                    text-decoration: none;
+                    &:hover{
+                        color: darken($secondary ,15%);
+                    }
+                }
+            }
+            .contact-holder{
+                font-size: 18px;
+                a{
+                    display: inline-block;
+                    margin-right: 1em;
+                    margin-bottom: 1em;
+                    color: $primary;
+                    .fa{
+                        color: $secondary;
+                    }
+                }
+            }
+            .reservation-btn{
+                font-family: 'Fredericka the Great';
+                font-size: 38px;
+                border: 1px $secondary dotted;
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                border-radius: 0.25rem;
+                transition: 0.25s ease all;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover{
+                    background: $secondary;
+                    color: white;
+                }
+            }
+        }
+    }
+    margin-bottom: -340px;
+    .navbar{
+        border-top: 1px solid rgba($color: #5DA0AA, $alpha: 0.5);
+        border-bottom: 1px solid rgba($color: #5DA0AA, $alpha: 0.5);
+        padding: 0;
+        ul{
+            flex: 1;
+            justify-content: space-between;
+            li{
+                a{
+                    font-weight: 700;
+                    font-size: 22px;
+                    text-transform: uppercase; 
+                    padding: 1.5rem 0.5rem;
+                }
+                &.current_page_item{
+                    a{
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-banner{
+    height: 1080px;
+    background: ccc;
+    background-image: url(../img/home-banner.jpg);
+    background-size: cover;
+}
