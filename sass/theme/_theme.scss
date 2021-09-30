@@ -25,7 +25,7 @@ body{
         padding-bottom: 15px;
         height: auto;
         .navbar-toggler{
-            display: none;
+           
             @media (max-width:$lg){
                 display: block;
             }
@@ -39,19 +39,46 @@ body{
             &:hover{
                 background: rgba(#5DA0AA,0.25);
             }
+            .all-bars{
+                margin-top: -6px;
+                margin-left: 0.5em;
+            }
             .bar{
                 height: 4px;
                 border-radius: 4px;
                 background: rgba(#5DA0AA,0.5);
                 margin-bottom: 4px;
+                width: 2.5em;
             }
             .menu-title{
                 font-size: 14px;
                 margin-top: 1em;
                 text-transform: uppercase;
             }
+            &.md-view{
+                display: none;
+            }
             @media (max-width:$md){
                 display: none;
+                &.md-view{
+                    display: flex;
+                    padding: 0.5em;
+                    padding-bottom: 0.5em;
+                    .menu-title{
+                        margin-top: 0;
+                        margin-right: 0.7em;
+                        align-items: center;
+                        margin: -0.5em;
+                    }
+                    .bar{
+                        height: 2px;
+                        border-radius: 2px;
+                        background: rgba(#5DA0AA,0.5);
+                        margin-bottom: 3px;
+                        width: 1em;
+                    }
+                }
+               
             }
         }
         
@@ -93,7 +120,7 @@ body{
                 &.social-media-holder-tablet{
                     display: none;
                     @media (max-width:$lg){
-                        display: inline-block;
+                        display: none;
                         font-size: 18px;  
                     }
                     @media (max-width:$md){
@@ -115,6 +142,10 @@ body{
             .contact-holder{
                 font-size: 18px;
                 font-weight: 600;
+                @media (max-width:$md){
+                    display: flex;
+                    justify-content: space-between;
+                }
                 a{
                     display: inline-block;
                     margin-right: 1em;
@@ -139,6 +170,7 @@ body{
                         display: none;
                     }
                 }
+               
             }
             .reservation-btn{
                 font-family: 'Fredericka the Great';

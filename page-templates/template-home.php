@@ -14,7 +14,9 @@ get_header();
 
 ?>
 
-<div class="home-banner"></div>
+<div class="home-banner">
+    <h1>A Dining Experience</h1>
+</div>
 
 
 <?php get_footer(); ?>

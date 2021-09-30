@@ -59,6 +59,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<a href="#"><i class="fa fa-facebook"></i></a>
 									<a href="#"><i class="fa fa-instagram"></i></a>
 								</div>
+								<button class="navbar-toggler md-view" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+									<div class="menu-title">
+										Menu
+									</div>
+									<div class="all-bars">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+									</div>
+								</button>
 							</div>
 							
 							<a href="#" class="reservation-btn">Make a Reservation</a>
