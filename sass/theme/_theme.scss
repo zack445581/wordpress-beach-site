@@ -2,6 +2,11 @@
 $primary: #223A47;
 $secondary: #F27257;
 
+$xl: 1440px;
+$lg: 992px;
+$md:768px;
+$sm: 576px;
+
 body{
     //font-family: 'Fredericka the Great', cursive;
     font-family: 'Source Sans Pro', sans-serif;
@@ -10,16 +15,90 @@ body{
 }
 
 #wrapper-navbar{
+    margin-bottom: -340px;
+    @media (max-width:$lg){
+        margin-bottom: 0;
+    }
     .top-header-holder{
         height: 260px;
-        background-color: gray;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto;
+        .navbar-toggler{
+            display: none;
+            @media (max-width:$lg){
+                display: block;
+            }
+            @media (max-width:$md){
+                padding-top: 15px;
+                padding-bottom: 15px;
+               
+            }
+            padding: 0em 1em;
+            padding-top: 1em;
+            &:hover{
+                background: rgba(#5DA0AA,0.25);
+            }
+            .bar{
+                height: 4px;
+                border-radius: 4px;
+                background: rgba(#5DA0AA,0.5);
+                margin-bottom: 4px;
+            }
+            .menu-title{
+                font-size: 14px;
+                margin-top: 1em;
+                text-transform: uppercase;
+            }
+            @media (max-width:$md){
+                display: none;
+            }
+        }
+        
         .container{
             .logo-holder{
-                .logo{
-                    width: 275px;
-
+                display: block;
+                img{
+                    @media (max-width:$lg){
+                        width: 225px;
+                    }
+                }
+                @media (max-width:$md){
+                    display: none;
+                }
+            }
+            .col-6{
+                @media (max-width:$lg){
+                    text-align: center;
+                }
+            }
+            .col-4{
+                @media (max-width:$md){
+                    display: none;
+                }
+            }
+            .social-media-holder ,.social-media-holder-tablet{
+                font-size: 50px;
+                a{
+                    color: $secondary;
+                    text-decoration: none;
+                    &:hover{
+                        color: darken($secondary ,15%);
+                    }
+                }
+                @media (max-width:$lg){
+                    display: none;
+                }
+                
+                &.social-media-holder-tablet{
+                    display: none;
+                    @media (max-width:$lg){
+                        display: inline-block;
+                        font-size: 18px;  
+                    }
+                    @media (max-width:$md){
+                        display: none;
+                    }
                 }
             }
             .social-media-holder{
@@ -31,16 +110,33 @@ body{
                         color: darken($secondary ,15%);
                     }
                 }
+               
             }
             .contact-holder{
                 font-size: 18px;
+                font-weight: 600;
                 a{
                     display: inline-block;
                     margin-right: 1em;
                     margin-bottom: 1em;
+                    @media (max-width:$lg){
+                        margin-right: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+                    @media (max-width:$md){
+                        margin-right: 0em;
+                        margin-bottom: 0em;
+                       
+                    }
                     color: $primary;
                     .fa{
                         color: $secondary;
+                    }
+                }
+                @media (max-width:$lg){
+                    font-size: 16px;
+                    .address{
+                        display: none;
                     }
                 }
             }
@@ -54,14 +150,20 @@ body{
                 transition: 0.25s ease all;
                 cursor: pointer;
                 text-decoration: none;
+                @media (max-width:$md){
+                    display: none;
+                }
                 &:hover{
                     background: $secondary;
                     color: white;
                 }
+                @media (max-width:$lg){
+                    font-size: 16px;
+                }
             }
         }
     }
-    margin-bottom: -340px;
+    
     .navbar{
         border-top: 1px solid rgba($color: #5DA0AA, $alpha: 0.5);
         border-bottom: 1px solid rgba($color: #5DA0AA, $alpha: 0.5);
@@ -75,6 +177,10 @@ body{
                     font-size: 22px;
                     text-transform: uppercase; 
                     padding: 1.5rem 0.5rem;
+                    @media (max-width:$xl){
+                        font-size: 20px;
+                        padding: 1em 0.33em;
+                    }
                 }
                 &.current_page_item{
                     a{
@@ -88,7 +194,10 @@ body{
 
 .home-banner{
     height: 1080px;
-    background: ccc;
     background-image: url(../img/home-banner.jpg);
     background-size: cover;
+    background-position: top center;
+    @media (max-width:$lg){
+        background-position: top -350px center;
+    }
 }

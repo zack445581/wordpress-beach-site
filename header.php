@@ -37,27 +37,42 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="top-header-holder">
 			<div class="container">
 				<div class="row align-items-end">
-					<div class="col-4">
+					<div class="col-md-4">
 						<div class="logo-holder">
-							<div class="logo">
+							
 								<img src="<?php echo  get_template_directory_uri(); ?>/img/logo.svg" alt="The blackbeach logo" width="273">
-							</div>
+							
 						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-md-6">
 						<div class="reservation-holder">
 							<div class="contact-holder">
 								<a class="phone">
 									<i class="fa fa-phone"></i>	
-									0897916575</a>
+									0897916575
+								</a>
 								<a class="address">
 									<i class="fa fa-map"></i>		
-									Lot 757, Ocean Drive, Bunbury</a>
+									Lot 757, Ocean Drive, Bunbury
+								</a>
+								<div class="social-media-holder-tablet">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</div>
 							</div>
+							
 							<a href="#" class="reservation-btn">Make a Reservation</a>
 						</div>
 					</div>
 					<div class="col-">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="menu-title">
+								Menu
+							</div>
+						</button>
 						<div class="social-media-holder">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-instagram"></i></a>
@@ -77,9 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
