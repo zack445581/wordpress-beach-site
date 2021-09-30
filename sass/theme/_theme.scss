@@ -229,7 +229,52 @@ body{
     background-image: url(../img/home-banner.jpg);
     background-size: cover;
     background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &:after{
+        content: "";
+        display: block;
+        height: 230px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+27,1+27,0+99 */
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 27%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 27%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 27%,rgba(255,255,255,0) 99%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
     @media (max-width:$lg){
         background-position: top -350px center;
+        height: 900px;
+    }
+    h1{
+        font-size: 100px;
+        font-family:  'Fredericka the Great';
+        position: relative;
+        z-index: 1000;
+        margin-top: -200px;
+    }
+}
+
+
+.home-call-to-action{
+    .call-to-action{
+        border-radius: 50%;
+        background: $primary;
+        padding-bottom: 100%;
+        position: relative;
+        .image{
+            background-image: url(../img/rib-eye_steak_with_61963_16x9.jpg);
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border-radius: 50%;
+        }
     }
 }

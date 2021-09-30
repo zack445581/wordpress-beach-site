@@ -15,7 +15,33 @@ get_header();
 ?>
 
 <div class="home-banner">
-    <h1>A Dining Experience</h1>
+    <div class="container">
+        <h1>A Dining Experience</h1>
+    </div>
+</div>
+
+<div class="home-call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="call-to-action">
+                    <div class="image">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="call-to-action">
+                    360
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="call-to-action">
+                    360
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
